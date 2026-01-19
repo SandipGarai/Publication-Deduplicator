@@ -311,13 +311,9 @@ This helps users understand redundancy patterns in their data.
 - **Dr. Sandip Garai** - [Google Scholar](https://scholar.google.com/citations?user=Es-kJk4AAAAJ&hl=en)
 - **Dr. Kanaka K K** - [Google Scholar](https://scholar.google.com/citations?user=0dQ7Sf8AAAAJ&hl=en&oi=ao)
 
-📧 Contact: [drgaraislab@gmail.com](mailto:drgaraislab@gmail.com)
+[📧 Contact:](mailto:drgaraislab@gmail.com)
 
 ---
-
-## Contact
-
-drgaraislab@gmail.com
 
 ## License
 

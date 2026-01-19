@@ -1,4 +1,4 @@
-# Research Article Deduplicator
+# Publication Deduplicator
 
 ## Overview
 
@@ -317,7 +317,7 @@ This helps users understand redundancy patterns in their data.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE]([LICENSE](https://mit-license.org/)) file for details.
 
 ---
 
@@ -327,5 +327,6 @@ Streamlit team for the excellent web framework
 ---
 
 **Publication Deduplicator v1.0** | Developed for Bibliography Preparation
+
 
 

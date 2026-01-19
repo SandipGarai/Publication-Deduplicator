@@ -1,11 +1,5 @@
 """
-Research Article Deduplicator v4
-- Improved numbered article parsing
-- CrossRef link generation
-- Comparison mode to verify article count
-- NAAS/IF rating preservation
-
-Author: Claude AI Assistant
+Publication Deduplicator v1.0
 """
 
 import streamlit as st
@@ -22,7 +16,7 @@ import time
 
 # Page configuration
 st.set_page_config(
-    page_title="Research Article Deduplicator",
+    page_title="Publication Deduplicator",
     page_icon="📚",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -1017,3 +1011,4 @@ For best results, use numbered format:
 
 if __name__ == "__main__":
     main()
+

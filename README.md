@@ -311,7 +311,7 @@ This helps users understand redundancy patterns in their data.
 - **Dr. Sandip Garai** - [Google Scholar](https://scholar.google.com/citations?user=Es-kJk4AAAAJ&hl=en)
 - **Dr. Kanaka K K** - [Google Scholar](https://scholar.google.com/citations?user=0dQ7Sf8AAAAJ&hl=en&oi=ao)
 
-[📧 Contact:](mailto:drgaraislab@gmail.com)
+📧 [Contact:](mailto:drgaraislab@gmail.com)
 
 ---
 
@@ -330,3 +330,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 **Publication Deduplicator v1.0** | Developed for Bibliography Preparation
+

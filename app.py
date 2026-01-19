@@ -1,5 +1,6 @@
 """
-Publication Deduplicator v1.0
+Publicaton Article Deduplicator v1.0
+
 """
 
 import streamlit as st
@@ -364,6 +365,28 @@ def normalize_text(text: str) -> str:
     text = re.sub(r'published\s+on[^.]+', '', text, flags=re.IGNORECASE)
     text = text.strip()
     return text
+
+
+def citation_sort_key(article: str) -> tuple:
+    """
+    Generate a stable alphabetical sort key for references.
+    Sort order:
+    1. First author surname
+    2. Year (if available)
+    3. Normalized title/text
+    """
+    # Extract first author surname
+    author_match = re.match(r'^([A-Z][a-zA-Z\-]+)', article)
+    author = author_match.group(1).lower() if author_match else ""
+
+    # Extract year
+    year_match = re.search(r'\((\d{4})\)', article)
+    year = int(year_match.group(1)) if year_match else 9999
+
+    # Normalized remainder
+    norm = normalize_text(article)
+
+    return (author, year, norm)
 
 
 def generate_article_hash(article: str) -> str:
@@ -821,7 +844,11 @@ For best results, use numbered format:
                 return
 
             unique_articles, duplicate_groups = find_duplicates(
-                articles, similarity_threshold)
+                articles, similarity_threshold
+            )
+
+            # Sort alphabetically (author → year → title)
+            unique_articles = sorted(unique_articles, key=citation_sort_key)
 
             st.session_state['unique_articles'] = unique_articles
             st.session_state['all_articles'] = articles
@@ -1011,4 +1038,3 @@ For best results, use numbered format:
 
 if __name__ == "__main__":
     main()
-

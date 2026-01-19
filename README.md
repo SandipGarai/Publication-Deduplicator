@@ -322,12 +322,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ## Acknowledgments
-
-- Streamlit team for the excellent web framework
-- Plotly for interactive visualization capabilities
-- SciPy for statistical testing functions
+Streamlit team for the excellent web framework
 
 ---
 
 **Publication Deduplicator v1.0** | Developed for Bibliography Preparation
+
 
